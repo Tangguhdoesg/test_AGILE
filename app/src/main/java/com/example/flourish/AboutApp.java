@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class AboutApp extends AppCompatActivity {
-
+    // about appnya
     // Views
     private ViewPager viewPager;
     private Button gotItBtn;
