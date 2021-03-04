@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 
 public class AboutUs extends AppCompatActivity {
-
+    // untuk about us disini
     private ViewPager viewPager;
     private ImageView[] dots;
     private LinearLayout sliderDotspanel;
