@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/granny_apple"
+    tools:context=".AboutUs">
+
+    <ImageView
+        android:layout_marginTop="-30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/logoflourish"/>
+
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textStyle="bold"
+        android:textColor="@color/java"
+        android:textSize="36sp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:overScrollMode="never"
+        android:id="@+id/aboutAppPager"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="405dp" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:id="@+id/SliderDots"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<!--    <Button-->
+<!--        android:background="@drawable/rounded_btn"-->
+<!--        android:text="Got It!"-->
+<!--        android:textSize="24sp"-->
+<!--        android:paddingStart="40dp"-->
+<!--        android:paddingEnd="40dp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

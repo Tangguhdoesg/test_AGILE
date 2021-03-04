@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/granny_apple"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:civ_border_color="@color/java"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/royal_purple"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+
+            android:id="@+id/editProfileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_btn_bermuda"
+            android:fontFamily="@font/montserrat"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:background="@drawable/rounded_btn_purple"
+            android:textAllCaps="false"
+            android:id="@+id/ChangePassBtn"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Change Password"
+            android:textSize="24sp" />
+
+        <Button
+            android:background="@drawable/rounded_btn_purple"
+            android:textAllCaps="false"
+            android:id="@+id/aboutAppBtn"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="About App"
+            android:textSize="24sp" />
+
+        <Button
+            android:background="@drawable/rounded_btn_purple"
+            android:textAllCaps="false"
+            android:id="@+id/logoutBtn"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

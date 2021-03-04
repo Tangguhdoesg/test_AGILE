@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment.Habit.HabitStreak"
+    android:background="@color/granny_apple"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habit"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/royal_purple"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bermuda"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_edit_pen"/>
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bermuda"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_clear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Streak "
+            android:textColor="@color/jungle_green"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/royal_purple"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/curStreakView"
+            android:background="@drawable/streak_textview"
+            android:layout_width="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/jaffa"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longest Streak"
+            android:textColor="@color/jungle_green"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/royal_purple"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/longStreakView"
+            android:background="@drawable/streak_textview"
+            android:layout_width="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/jaffa"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

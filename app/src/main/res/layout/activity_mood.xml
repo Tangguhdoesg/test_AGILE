@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/granny_apple"
+    tools:context=".Mood"
+    android:id="@+id/constraintLayout"
+    >
+
+    <TextView
+        android:id="@+id/moodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Mood\nTracker"
+        android:textColor="@color/java"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/moodpic"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toEndOf="@+id/moodText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hey there,"
+        android:textColor="@color/ocean_green"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/moodText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="are you ready to reflect\non your day?"
+        android:textColor="@color/ocean_green"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/awesomeBtn"
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/granny_apple"
+        android:drawableLeft="@drawable/ic_mood_awesome"
+        android:outlineProvider="none"
+        android:text="Awesome"
+        android:textAllCaps="false"
+        android:textColor="@color/cream_can"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/goodBtn"
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/granny_apple"
+        android:drawableLeft="@drawable/ic_mood_good"
+        android:outlineProvider="none"
+        android:text="Good"
+        android:textAllCaps="false"
+        android:textColor="@color/jaffa"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/awesomeBtn" />
+
+    <Button
+        android:id="@+id/mehBtn"
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/granny_apple"
+        android:drawableLeft="@drawable/ic_mood_meh"
+        android:outlineProvider="none"
+        android:text="Meh"
+        android:textAllCaps="false"
+        android:textColor="@color/medium_purple"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/goodBtn" />
+
+    <Button
+        android:id="@+id/sadBtn"
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/granny_apple"
+        android:drawableLeft="@drawable/ic_mood_sad"
+        android:outlineProvider="none"
+        android:text="Sad"
+        android:textAllCaps="false"
+        android:textColor="@color/royal_blue"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/mehBtn" />
+
+    <Button
+        android:id="@+id/terribleBtn"
+        android:stateListAnimator="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/granny_apple"
+        android:drawableLeft="@drawable/ic_mood_terrible"
+        android:outlineProvider="none"
+        android:text="Terrible"
+        android:textAllCaps="false"
+        android:textColor="@color/jungle_green"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/sadBtn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

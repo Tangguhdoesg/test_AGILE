@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/granny_apple"
+    android:orientation="vertical"
+    tools:context="com.example.flourish.MainFragment.FragmentEventCalendar">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:eventsEnabled="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/awesomeCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cream_can"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/goodCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/jaffa"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/mehCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/medium_purple"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/sadCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/royal_blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/terribleCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/jungle_green"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/awesomeCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Awesome"
+            android:textAllCaps="false"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/goodCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Good"
+            android:textAllCaps="false"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/mehCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Meh"
+            android:textAllCaps="false"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/sadCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Sad"
+            android:textAllCaps="false"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/terribleCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Terrible"
+            android:textAllCaps="false"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mood_awesome"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mood_good"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mood_meh"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mood_sad"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mood_terrible"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</LinearLayout>

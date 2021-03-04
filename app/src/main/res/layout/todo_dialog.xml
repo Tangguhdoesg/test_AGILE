@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/concrete"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="5dp"
+    android:overScrollMode="never"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:background="@color/concrete"-->
+<!--        app:cardCornerRadius="22dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+    <ScrollView
+        android:background="@color/concrete"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@color/concrete"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/java"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:text="To-do List"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/dateText"
+                android:textColor="@color/java"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/todoLayout"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+<!--    </androidx.cardview.widget.CardView>-->
+
+</androidx.cardview.widget.CardView>

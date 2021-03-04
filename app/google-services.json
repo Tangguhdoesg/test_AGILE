@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "220682856259",
+    "firebase_url": "https://flourish-26ae1.firebaseio.com",
+    "project_id": "flourish-26ae1",
+    "storage_bucket": "flourish-26ae1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220682856259:android:9357ac617247c5375b31f6",
+        "android_client_info": {
+          "package_name": "com.example.flourish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220682856259-m70bfcq2t8rio9prcd647n3ik6g6bn01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEQ5i42ClRWf_aw8OdiLEGO6Zt8QSq8es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220682856259-m70bfcq2t8rio9prcd647n3ik6g6bn01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/miCalendar"
+        android:title="Calendar"
+        android:icon="@drawable/ic_calendar"/>
+
+    <item android:id="@+id/miList"
+        android:title="Todo List"
+        android:icon="@drawable/ic_format_list_bulleted"/>
+
+    <item android:id="@+id/placeholder"
+        android:title=""/>
+
+    <item android:id="@+id/miHabit"
+        android:title="Habit"
+        android:icon="@drawable/ic_check_circle"/>
+
+    <item android:id="@+id/miProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_pin"/>
+
+</menu>
