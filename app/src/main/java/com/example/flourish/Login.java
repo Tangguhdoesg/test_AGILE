@@ -13,6 +13,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
+// this is the login
+
 public class Login extends AppCompatActivity {
 
     // Views
